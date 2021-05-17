@@ -1,0 +1,22 @@
+drop table userInfo;
+
+create table userInfo(
+    NAME VARCHAR2(10) NOT NULL,
+    ID VARCHAR2(8) NOT NULL,
+    PASSWORD VARCHAR2(8) NOT NULL,
+    GUBUN VARCHAR2(1),
+    TEL VARCHAR2(13),
+    JOB VARCHAR2(20),
+    GENDER NUMBER(1, 0),
+    HOBBY VARCHAR2(50),
+    INTRO VARCHAR2(200)
+);
+
+INSERT INTO userInfo
+VALUES('김영록', 'young', '1234', '3', '01012341234', '프로게이머', '0', '뿌요뿌요2', '김영록 입니다.');
+INSERT INTO userInfo
+VALUES('마석진', 'suck', '1234', '2', '01012341234', '피자가게', '0', '피자', '마석진 입니다.');
+INSERT INTO userInfo
+VALUES('윤창식', 'yoon', '1234', '1', '01012341234', '스포츠', '0', '농구', '윤창식 입니다.');
+
+select * from userInfo;
